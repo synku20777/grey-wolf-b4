@@ -9,14 +9,59 @@
   <body>
     <!-- Navbar - nestors  -->
     <nav class="navbar">
-      <h4>GW</h4>
+      <div class="logo">
+        <a href="index.html"><h4>GW</h4></a>
+      </div>
       <div class="navbar-gutter">
         <button type="button" class="button-link" id="cart">
           <img src="assets/icons/shopping bag.svg" alt="cart" />
         </button>
-        <button type="button" class="button-link" id="burger-menu">
+        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+        <label class="button-link" for="nav-toggle">
           <img src="assets/icons/Menu.svg" alt="menu" />
-        </button>
+        </label>
+        <div class="nav">
+          <div class="nav-list">
+            <label for="nav-toggle" class="button-link" id="close">
+              <img src="assets/icons/white/Close.svg" alt="Close Menu" />
+            </label>
+            <div class="input-wrapper">
+              <img src="assets\icons\Search.svg" alt="search" />
+              <input
+                type="text"
+                placeholder="Search"
+                autocomplete="off"
+                class="search"
+              />
+            </div>
+            <ul>
+              <li>
+                <div class="sidebar-item">
+                  Basics
+                  <img src="assets/icons/Forward.svg" alt="forward" />
+                </div>
+              </li>
+              <li>
+                <div class="sidebar-item">
+                  Sweaters
+                  <img src="assets/icons/Forward.svg" alt="forward" />
+                </div>
+              </li>
+              <li>
+                <div class="sidebar-item">
+                  Jeans
+                  <img src="assets/icons/Forward.svg" alt="forward" />
+                </div>
+              </li>
+              <li>
+                <div class="sidebar-item">
+                  Coats
+                  <img src="assets/icons/Forward.svg" alt="forward" />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
     <!-- Navbar -->

@@ -28,8 +28,10 @@ h1,
 h2,
 h3,
 h4 {
+  margin: 0px;
   font-family: serif;
   line-height: 125%;
+  color: var(--Black);
 }
 
 p {
@@ -40,6 +42,10 @@ p {
 h4 {
   font-weight: 400;
   font-size: 26px;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* end */
@@ -53,7 +59,6 @@ h4 {
   padding: 0.625rem 1rem;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 /*navbar udner */
@@ -61,13 +66,144 @@ h4 {
 nav {
   color: var(--Black, #171616);
   display: flex;
-  width: 24.375rem;
-  padding: 1rem 0.75rem;
+  padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
   background: var(--White, #FCFEFE);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
+.hidden-checkbox {
+  display: none;
+}
+
+label,
+.button-link {
+  cursor: pointer;
+}
+
+#close {
+  background: var(--Primary, #3A422D);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.nav .nav-list {
+  margin: 0%;
+  padding: 1rem;
+  display: flex;
+  width: 22.875rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -100%;
+  /* Initially positioned outside the viewport */
+  background: #E5E5E3;
+  transition: right 0.444s ease-out;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.nav-list li {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--Black);
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.search {
+  border: none;
+  padding: 0%;
+}
+
+.input-wrapper {
+  display: flex;
+  padding: 0.75rem 0.5rem;
+  position: relative;
+  gap: 0.5rem;
+  justify-content: left;
+  align-items: stretch;
+  align-self: stretch;
+  border-radius: 0%;
+  border: 1px solid var(--Black, #171616);
+  background: var(--White, #FCFEFE);
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding-right: 30px;
+  /* Space for the icon */
+}
+
+.input-wrapper input:focus {
+  border: none;
+  outline: none;
+  /* Adds a subtle blue glow */
+}
+
+
+.nav-list li .sidebar-item {
+  width: 100%;
+  display: inherit;
+  padding: 0.75rem 0rem;
+  justify-content: inherit;
+  align-items: inherit;
+  align-self: stretch;
+}
+
+.nav-list ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0;
+}
+
+/* overlay below */
+.nav::before {
+  content: "";
+  position: fixed;
+  /* Fixed positioning to cover the entire viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  z-index: -1;
+  /* Place it behind the nav-list */
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  pointer-events: none;
+  /* Ensures it doesn't interfere with clicks */
+}
+
+/* side menu transitions */
+#nav-toggle:checked+label+.nav .nav-list {
+  right: 0;
+  /* Slide in to be fully visible */
+}
+
+#nav-toggle:checked+label+.nav::before {
+  opacity: 1;
+  /* Show the overlay when the menu is open */
+}
+
+/* side menu end */
+
+
+.logo a {
+  color: inherit !important;
+  text-decoration: none !important;
+  user-select: none;
+  cursor: pointer;
+}
+
+
 
 
 
