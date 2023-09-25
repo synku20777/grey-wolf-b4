@@ -1,5 +1,8 @@
+/*main stuff, don't touch*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 * {
   font-family: 'Lora', serif;
@@ -9,6 +12,31 @@
 body {
   background-color: #E5E5E3 ;
 }
+
+h1, h2, h3, h4 {
+  font-family: serif;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+/* end */
+
+/*navbar udner */
+
+nav {
+display: flex;
+width: 24.375rem;
+padding: 1rem 0.75rem;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+/*Footer udner */
 
 .footer {
 display: flex;
