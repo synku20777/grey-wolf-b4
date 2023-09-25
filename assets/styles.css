@@ -3,7 +3,11 @@
 
 * {
   font-family: 'Lora', serif;
-  font-family: ;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  background-color: #E5E5E3 ;
 }
 
 .footer {
