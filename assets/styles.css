@@ -31,6 +31,7 @@ h4 {
   margin: 0px;
   font-family: serif;
   line-height: 125%;
+  font-weight: 400;
   color: var(--Black);
 }
 
@@ -39,9 +40,12 @@ p {
   font-size: 1rem;
 }
 
+h3 {
+  font-size: 1.8125rem;
+}
+
 h4 {
-  font-weight: 400;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 button {
@@ -202,32 +206,18 @@ label,
   cursor: pointer;
 }
 
+/* article */
+
 .Article {
   background-color: #3A422D
 }
 
 .ourSustainability {
-  color: var(--White, #FCFEFE);
-
-  /* Headings/H3 */
-  font-family: Lora;
-  font-size: 29px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  /* 36.25px */
+  color: var(--White, #FCFEFE) !important;
 }
 
 .articleText {
-  color: var(--White, #FCFEFE);
-
-  /* Body text/body_16 */
-  font-family: Source Sans Pro;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  /* 20px */
+  color: var(--White, #FCFEFE) !important;
 }
 
 .articleButton {
@@ -239,10 +229,7 @@ label,
   align-self: stretch;
 }
 
-
-
-
-
+/* article end */
 
 /*Footer udner */
 
