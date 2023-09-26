@@ -201,9 +201,11 @@ label,
   user-select: none;
   cursor: pointer;
 }
+
 .Article {
   background-color: #3A422D
 }
+
 .ourSustainability {
   color: var(--White, #FCFEFE);
 
@@ -212,18 +214,20 @@ label,
   font-size: 29px;
   font-style: normal;
   font-weight: 400;
-  line-height: 125%; /* 36.25px */
+  line-height: 125%;
+  /* 36.25px */
 }
 
 .articleText {
   color: var(--White, #FCFEFE);
 
-/* Body text/body_16 */
-font-family: Source Sans Pro;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 125%; /* 20px */
+  /* Body text/body_16 */
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 20px */
 }
 
 .articleButton {
@@ -247,11 +251,12 @@ line-height: 125%; /* 20px */
 
 }
 
-.footer-link{
+.footer-link {
   text-decoration: none !important;
   color: var(--Black, #171616);
 
-/* Body text/body_16 */
-font-weight: 400;
-line-height: 125%; /* 20px */
+  /* Body text/body_16 */
+  font-weight: 400;
+  line-height: 125%;
+  /* 20px */
 }
