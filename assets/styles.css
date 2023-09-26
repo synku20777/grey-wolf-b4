@@ -202,6 +202,40 @@ label,
   user-select: none;
   cursor: pointer;
 }
+.Article {
+  background-color: #3A422D
+}
+.ourSustainability {
+  color: var(--White, #FCFEFE);
+
+  /* Headings/H3 */
+  font-family: Lora;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%; /* 36.25px */
+}
+
+.articleText {
+  color: var(--White, #FCFEFE);
+
+/* Body text/body_16 */
+font-family: Source Sans Pro;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%; /* 20px */
+}
+
+.articleButton {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
 
 
 
