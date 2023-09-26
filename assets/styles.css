@@ -117,7 +117,7 @@ label,
   align-self: stretch;
 }
 
-.search {
+.input-hidden {
   border: none;
   padding: 0%;
 }
@@ -144,7 +144,6 @@ label,
 .input-wrapper input:focus {
   border: none;
   outline: none;
-  /* Adds a subtle blue glow */
 }
 
 
