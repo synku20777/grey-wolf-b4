@@ -90,6 +90,7 @@ button {
 nav.navbar {
   width: 100%;
   position: fixed;
+  top: env(safe-area-inset-top);
   top: 0%;
   left: 0%;
   color: var(--Black, #171616);
