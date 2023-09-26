@@ -247,3 +247,12 @@ line-height: 125%; /* 20px */
   display: flex;
 
 }
+
+.footer-link{
+  text-decoration: none !important;
+  color: var(--Black, #171616);
+
+/* Body text/body_16 */
+font-weight: 400;
+line-height: 125%; /* 20px */
+}
