@@ -15,8 +15,11 @@ body {
 }
 
 main {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.4375rem;
   margin: 0%;
-  padding: 0.75rem;
 }
 
 .footer {
@@ -65,16 +68,33 @@ button {
   align-items: center;
 }
 
+.button-primary {
+  color: var(--White);
+  background: #3A422D;
+  display: flex;
+  border: none;
+  padding: 0.625rem 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+
 /*navbar udner */
 
-nav {
+nav.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
   color: var(--Black, #171616);
   display: flex;
-  padding: 1rem 2rem;
+  padding: 1rem 0.75rem;
   justify-content: space-between;
   align-items: center;
   background: var(--White, #FCFEFE);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
 }
 
 .hidden-checkbox {
@@ -205,6 +225,25 @@ label,
   user-select: none;
   cursor: pointer;
 }
+
+/* hero */
+.hero-section {
+  color: #FCFEFE;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 110.05%), url('images/6471e6f88712be98b39d421fdd164345.png'), lightgray -107.516px 0px / 167.179% 100% no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  width: 24.375rem;
+  height: 40.75rem;
+  padding: 1.5rem 0.75rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+/* hero end */
 
 /* article */
 
