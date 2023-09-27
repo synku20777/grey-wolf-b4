@@ -259,7 +259,7 @@ label,
 
 /* category  */
 
-.main-padding {
+.categories {
   display: flex;
   padding: 0rem 0.75rem;
   flex-direction: column;
