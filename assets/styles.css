@@ -48,7 +48,6 @@ h3,
 h4 {
   font-family: 'Lora', serif;
   margin: 0px;
-  font-family: serif;
   line-height: 125%;
   font-weight: 400;
   color: var(--text-color);
@@ -67,6 +66,11 @@ h4 {
   font-size: 1.625rem;
 }
 
+/* Remove bullet points from all unordered lists */
+ul {
+  list-style-type: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -76,7 +80,8 @@ button {
 /* buttons under */
 
 .button-link,
-.button-primary {
+.button-primary,
+.button-secondary {
   display: flex;
   border: none;
   padding: 0.625rem 1rem;
@@ -88,6 +93,11 @@ button {
 .button-primary {
   color: var(--white-color);
   background: var(--primary-color);
+}
+
+.button-secondary {
+  color: var(--white-color);
+  background: var(--secondary-color);
 }
 
 
@@ -299,32 +309,18 @@ label,
   padding: 0.75rem;
 }
 
-.ourSustainability {
-  color: var(--white-color) !important;
-
+.on--dark {
+  color: var(--white-color);
 }
 
 .articleText {
-  color: var(--white-color) !important;
+  color: var(--white-color);
 }
 
 .imgArticle {
   height: auto;
   width: auto;
   align-self: stretch;
-}
-
-.articleButton {
-  display: flex;
-  padding: 10px 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-  background-color: var(--secondary-color);
-  border: none;
-  color: var(--white-color);
-
 }
 
 /* article end */
@@ -401,11 +397,6 @@ footer {
   font-weight: 400;
   line-height: 125%;
   /* 20px */
-}
-
-/* Remove bullet points from all unordered lists */
-ul {
-  list-style-type: none;
 }
 
 .navigation-container {
