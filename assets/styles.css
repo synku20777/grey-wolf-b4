@@ -3,19 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-
-* {
-  font-family: 'Lora', serif;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #3A422D;
+  --secondary-color: #938066;
+  --background-color: #E5E5E3;
+  --text-color: #171616;
+  --white-color: #FCFEFE;
+}
+
+
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0%;
   background-color: #E5E5E3;
 }
@@ -42,11 +46,12 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: 'Lora', serif;
   margin: 0px;
   font-family: serif;
   line-height: 125%;
   font-weight: 400;
-  color: var(--Black);
+  color: var(--text-color);
 }
 
 p {
@@ -70,26 +75,21 @@ button {
 
 /* buttons under */
 
-.button-link {
-  background-color: transparent;
-  display: inline-flex;
-  border: none;
-  padding: 0.625rem 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
+.button-link,
 .button-primary {
-  color: var(--White);
-  background: #3A422D;
   display: flex;
   border: none;
   padding: 0.625rem 1rem;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  align-self: stretch;
 }
+
+.button-primary {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
+
 
 /*navbar udner */
 
@@ -98,12 +98,12 @@ nav.navbar {
   position: fixed;
   top: 0%;
   left: 0%;
-  color: var(--Black, #171616);
+  color: var(--text-color);
   display: flex;
   padding: 1rem 0.75rem;
   justify-content: space-between;
   align-items: center;
-  background: var(--White, #FCFEFE);
+  background: var(--white-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 1000;
 }
@@ -118,8 +118,8 @@ label,
 }
 
 #close {
-  background: var(--Primary, #3A422D);
-  color: var(--White);
+  background: var(--primary-color);
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -136,7 +136,7 @@ label,
   top: 0;
   right: -100%;
   /* Initially positioned outside the viewport */
-  background: #E5E5E3;
+  background: var(--background-color);
   transition: right 0.444s ease-out;
   height: 100vh;
   overflow-y: auto;
@@ -144,7 +144,7 @@ label,
 
 .nav-list li {
   font-family: 'Source Sans Pro', sans-serif;
-  color: var(--Black);
+  color: var(--text-color);
   font-size: 1.25rem;
   display: flex;
   justify-content: space-between;
@@ -167,8 +167,8 @@ label,
   align-items: stretch;
   align-self: stretch;
   border-radius: 0%;
-  border: 1px solid var(--Black, #171616);
-  background: var(--White, #FCFEFE);
+  border: 1px solid var(--text-color);
+  background: var(--white-color);
 }
 
 .input-wrapper input {
@@ -240,7 +240,7 @@ label,
 
 /* hero */
 .hero-section {
-  color: #FCFEFE;
+  color: var(--white-color);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 110.05%), url('images/6471e6f88712be98b39d421fdd164345.png'), lightgray -107.516px 0px / 167.179% 100% no-repeat;
   background-position: center center;
   background-size: cover;
@@ -295,17 +295,17 @@ label,
 /* article */
 
 .article {
-  background-color: #3A422D;
+  background-color: var(--primary-color);
   padding: 0.75rem;
 }
 
 .ourSustainability {
-  color: var(--White, #FCFEFE) !important;
+  color: var(--white-color) !important;
 
 }
 
 .articleText {
-  color: var(--White, #FCFEFE) !important;
+  color: var(--white-color) !important;
 }
 
 .imgArticle {
@@ -321,9 +321,9 @@ label,
   align-items: center;
   gap: 16px;
   align-self: stretch;
-  background-color: #938066;
+  background-color: var(--secondary-color);
   border: none;
-  color: #FCFEFE;
+  color: var(--white-color);
 
 }
 
@@ -369,7 +369,7 @@ footer {
 }
 
 .Contact-item span {
-  color: var(--Black, #171616);
+  color: var(--text-color);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -391,10 +391,10 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  background: var(--Primary, #3A422D);
+  background: var(--primary-color);
 
   /* Text styles */
-  color: var(--White, #FCFEFE);
+  color: var(--white-color);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -438,7 +438,7 @@ ul {
 
 .navigation-link {
   text-decoration: none !important;
-  color: var(--Black, #171616);
+  color: var(--text-color);
 
   /* Body text/body_16 */
   font-weight: 400;
@@ -476,7 +476,7 @@ ul {
 .right-link {
   text-decoration: none;
   /* Remove underlining */
-  color: var(--Black, #171616);
+  color: var(--text-color);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -505,11 +505,11 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  color: var(--Black, #171616);
+  color: var(--text-color);
 }
 
 .p89 {
-  color: var(--Black, #171616);
+  color: var(--text-color);
   font-family: Source Sans Pro;
   font-size: 16px;
   font-style: normal;
@@ -524,7 +524,7 @@ ul {
   align-items: center;
   gap: 16px;
   align-self: stretch;
-  border: 1px solid var(--Primary, #3A422D);
+  border: 1px solid var(--primary-color);
 }
 
 /*Product picture Henrietta*/
