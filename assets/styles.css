@@ -210,6 +210,13 @@ nav.navbar {
   align-self: stretch;
 }
 
+.sidebar-item a {
+  width: 100%;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
 .nav-list ul {
   width: 100%;
   margin: 0px;
