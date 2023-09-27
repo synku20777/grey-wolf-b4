@@ -300,7 +300,7 @@ label,
 
 .article {
   background-color: #3A422D;
-  padding: 15px ;
+  padding: 0.75rem;
 }
 
 .ourSustainability {
@@ -319,6 +319,10 @@ label,
   align-items: center;
   gap: 16px;
   align-self: stretch;
+  background-color: #938066;
+  border: none;
+  color: #FCFEFE;
+
 }
 
 /* article end */
