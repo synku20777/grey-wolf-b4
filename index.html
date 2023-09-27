@@ -6,7 +6,6 @@
     <title>Grey Wolf</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
-  <body>
     <!-- Navbar - nestors  -->
     <nav class="navbar">
       <div class="logo">
@@ -134,9 +133,8 @@
     </main>
     <!-- footer - Henrietta  -->
     <div class="footer">
-      <div>
-        <div class="Contact">
-          <h2>Contact</h2>
+      <h2>Contact</h2>
+      <div class="Contact">
           <div class="Contact-container">
             <div class="Contact-item">
                 <img src="assets/icons/Location.svg" alt="Location">
@@ -146,26 +144,31 @@
                 <img src="assets/icons/Call.svg" alt="Call">
                 <span>(0045) 42529896</span>
             </div>
-        </div>
+         </div>
       </div>
       <div class="email-container">
-          <!-- Email input field -->
+        <!-- Email input field -->
+        <div class="input-wrapper">
           <input
-            class="email-input"
-            type="email"
-            placeholder="Enter your email"
+            type="text"
+            placeholder="Email"
+            autocomplete="off"
+            class="input-hidden"
           />
-          <!-- Subscribe button -->
-          <button class="subscribe-button">Subscribe</button>
+        </div>
+        <!-- Subscribe button -->
+        <button class="button-primary">Subscribe</button>
       </div>
+     
+      
     <div class="navigation-container">
       <div class="Sitemap">
        <h2>Sitemap</h2>
        <div class="links-container">
          <ul>
-             <li><a class="footer-link" href="index.html">Forside</a></li>
-             <li><a class="footer-link" href="category.html">Kategoriside</a></li>
-             <li><a class="footer-link"href="product.html">Produktside</a></li>
+             <li><a class="navigation-link" href="index.html">Forside</a></li>
+             <li><a class="navigation-link" href="category.html">Kategoriside</a></li>
+             <li><a class="navigation-link"href="product.html">Produktside</a></li>
          </ul>
        </div>
     </div>
@@ -189,7 +192,7 @@
       <a href="terms.html" class="center-link">Terms of Use</a>
       <a href="privacy.html" class="right-link">Privacy Policy</a>
   </div>
-  </div>
+</div>
     <!-- footer-->
   </body>
 </html>
