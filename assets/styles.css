@@ -294,8 +294,7 @@ label,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-  margin-bottom: 24px;
+  gap: 0.5rem;
 }
 
 .Contact-container {
@@ -333,7 +332,6 @@ label,
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
-  margin-bottom: 24px;
 }
 
 .button-primary {
