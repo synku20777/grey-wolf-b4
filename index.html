@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grey Wolf</title>
-
     <link rel="stylesheet" href="assets/styles.css" />
-
-
   </head>
   <body>
     <!-- Navbar - nestors  -->
@@ -34,7 +31,7 @@
                 type="text"
                 placeholder="Search"
                 autocomplete="off"
-                class="search"
+                class="input-hidden"
               />
             </div>
             <ul>
@@ -70,17 +67,67 @@
     <!-- Navbar -->
 
     <main>
-<!-- Hero -->
-<div class="hero-section">
-  <h4>The “I don't know” collection</h4>
-<button class="button-primary">explore now</button>
-</div>
-<!-- Hero end -->
+      <!-- Hero -->
+      <div class="hero-section">
+        <h4>The “I don't know” collection</h4>
+        <button class="button-primary">explore now</button>
+      </div>
+      <!-- Hero end -->
+
+      <!-- categories -->
+      <div class="main-padding">
+        <h2>Categories</h2>
+        <div class="container-wrapper">
+          <div class="category-card" id="basics">
+            <img src="assets\images\Product card.png" alt="title" />
+            <div class="category">
+              <h4>Basics</h4>
+              <button class="button-primary">
+                <img src="assets\icons\white\Forward.svg" alt="open category" />
+              </button>
+            </div>
+          </div>
+          <div class="category-card" id="sweaters">
+            <img src="assets\images\Product card-1.png" alt="title" />
+            <div class="category">
+              <h4>Sweaters</h4>
+              <button class="button-primary">
+                <img src="assets\icons\white\Forward.svg" alt="open category" />
+              </button>
+            </div>
+          </div>
+          <div class="category-card" id="Jeans">
+            <img src="assets\images\Product card-2.png" alt="title" />
+            <div class="category">
+              <h4>Jeans</h4>
+              <button class="button-primary">
+                <img src="assets\icons\white\Forward.svg" alt="open category" />
+              </button>
+            </div>
+          </div>
+          <div class="category-card" id="Coats">
+            <img src="assets\images\Product card-3.png" alt="title" />
+            <div class="category">
+              <h4>Coats</h4>
+              <button class="button-primary">
+                <img src="assets\icons\white\Forward.svg" alt="open category" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- categories end  -->
       <!-- Imran -->
       <div class="article">
         <div class="ourSustainability"><h3>Our Sustainability</h3></div>
-        <div class="articleText"><p>In this article, we delve deep into how we are adapting to meet this demand and ensuring that the future of fashion is as green as it is chic.</p></div>
-        <div><img src="" alt=""></div>
+        <div class="articleText">
+          <p>
+            In this article, we delve deep into how we are adapting to meet this
+            demand and ensuring that the future of fashion is as green as it is
+            chic.
+          </p>
+        </div>
+        <div><img src="" alt="" /></div>
         <div class="articleButton"><button>Open article</button></div>
       </div>
       <!-- Imran -->
@@ -103,7 +150,11 @@
       </div>
       <div class="email-container">
           <!-- Email input field -->
-          <input class="email-input" type="email" placeholder="Enter your email">
+          <input
+            class="email-input"
+            type="email"
+            placeholder="Enter your email"
+          />
           <!-- Subscribe button -->
           <button class="subscribe-button">Subscribe</button>
       </div>
