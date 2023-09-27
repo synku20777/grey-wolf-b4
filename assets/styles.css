@@ -299,11 +299,13 @@ label,
 /* article */
 
 .article {
-  background-color: #3A422D
+  background-color: #3A422D;
+  padding: 15px ;
 }
 
 .ourSustainability {
   color: var(--White, #FCFEFE) !important;
+  
 }
 
 .articleText {
