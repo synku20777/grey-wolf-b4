@@ -9,15 +9,15 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-body {
-  margin: 0%;
-  background-color: #E5E5E3;
-}
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0%;
+  background-color: #E5E5E3;
 }
 
 img {
@@ -28,7 +28,7 @@ img {
 main {
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 2.4375rem;
   margin: 0%;
 }
@@ -252,6 +252,40 @@ label,
 
 /* hero end */
 
+/* category  */
+
+.main-padding {
+  display: flex;
+  padding: 0rem 0.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  align-self: stretch;
+}
+
+.container-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+/* end */
+
 /* article */
 
 .article {
@@ -261,7 +295,7 @@ label,
 
 .ourSustainability {
   color: var(--White, #FCFEFE) !important;
-  
+
 }
 
 .articleText {
@@ -291,7 +325,7 @@ label,
 
 /*Footer udner */
 
-.footer {
+footer {
   display: flex;
   width: 100%;
   padding: 24px;
@@ -299,7 +333,6 @@ label,
   align-items: flex-start;
   gap: 24px;
   background: var(--background, #E5E5E3);
-
 }
 
 .Contact {
@@ -445,6 +478,7 @@ ul {
   line-height: 125%;
   /* 20px */
 }
+
 /*Product card Imran*/
 .productCard {
   display: flex;
@@ -461,20 +495,20 @@ ul {
   max-height: 46px;
   align-self: stretch;
   font-family: Source Sans Pro;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 125%;
-color: var(--Black, #171616);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  color: var(--Black, #171616);
 }
 
 .p89 {
-color: var(--Black, #171616);
+  color: var(--Black, #171616);
   font-family: Source Sans Pro;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 125%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
 }
 
 .buttonOpenItem {
@@ -491,25 +525,25 @@ line-height: 125%;
 
 .product-picture {
   display: flex;
-width: 363px;
-height: 337px;
-padding: 8px;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-flex-shrink: 0;
-background: url('images/socks-2.png'), lightgray 50% / cover no-repeat;
-background-size: 110% 110%; 
-background-repeat: no-repeat;
-background-position: center bottom;
+  width: 363px;
+  height: 337px;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  background: url('images/socks-2.png'), lightgray 50% / cover no-repeat;
+  background-size: 110% 110%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .favorite-container {
   display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 10px;
-align-self: stretch;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
 }
 
 .favorite-container img {
@@ -518,18 +552,18 @@ align-self: stretch;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  cursor: pointer; 
+  cursor: pointer;
   filter: invert(1);
 }
 
 .carousel {
   display: flex;
-align-items: flex-start;
-gap: 8px;
-cursor: pointer;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .carousel-icon {
   width: 8px;
-height: 8px;
+  height: 8px;
 }
