@@ -321,14 +321,14 @@ nav.navbar {
 
 .article {
   background-color: var(--primary-color);
-  padding: 0.75rem;
+  display: flex;
+  padding: 1.5rem 0.75rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .on--dark {
-  color: var(--white-color);
-}
-
-.articleText {
   color: var(--white-color);
 }
 
@@ -336,6 +336,10 @@ nav.navbar {
   height: auto;
   width: auto;
   align-self: stretch;
+}
+
+.article button {
+  width: 100%;
 }
 
 /* article end */
@@ -415,7 +419,7 @@ footer {
 }
 
 .navigation-link {
-  text-decoration: none !important;
+  text-decoration: none;
   color: var(--text-color);
 
   /* Body text/body_16 */
