@@ -34,11 +34,11 @@ img {
 }
 
 main {
+  margin-top: 4.75rem;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2.4375rem;
-  margin-top: 4rem;
 }
 
 
@@ -54,6 +54,7 @@ h4 {
 }
 
 p {
+  margin: 0;
   font-family: sans-serif;
   font-size: 1rem;
 }
@@ -83,7 +84,8 @@ label,
 
 .button-link,
 .button-primary,
-.button-secondary {
+.button-secondary,
+.button-outline {
   display: flex;
   border: none;
   padding: 0.625rem 1rem;
@@ -134,12 +136,6 @@ nav.navbar {
 .hidden-checkbox {
   display: none;
 }
-
-/* #close {
-  background: var(--primary-color);
-  color: var(--white-color);
-  cursor: pointer;
-} */
 
 .nav .nav-list {
   margin: 0%;
@@ -254,6 +250,38 @@ nav.navbar {
 }
 
 /* side menu end */
+
+/* Breadcrumbs  */
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  gap: 0.25rem 0.5rem;
+}
+
+/* Style for the breadcrumb list */
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Add a separator between breadcrumb items */
+.breadcrumb li+li:before {
+  margin: 0 5;
+}
+
+/* breadcrumbs end */
 
 
 .logo a {
@@ -409,11 +437,13 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
 }
 
 .links-container ul {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  gap: 0.5rem;
   /* Remove the default margin */
   padding: 0;
 }
@@ -428,13 +458,13 @@ footer {
   /* 20px */
 }
 
-.icon-pair {
+.smm-container {
   display: flex;
-  width: 61px;
+  width: 3.8125rem;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
-  row-gap: 8px;
+  row-gap: 0.5rem;
   align-self: stretch;
   flex-wrap: wrap;
 }
@@ -461,44 +491,51 @@ footer {
 }
 
 /*Product card Imran*/
-.productCard {
+
+.main-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 0.75rem;
+}
+
+.product-net {
   display: flex;
   width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.5rem 0.5rem;
+  flex-wrap: wrap;
+}
+
+.product-preview {
+  display: flex;
+  width: 11.1875rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 0.5rem;
   flex-shrink: 0;
-  padding: 0.75rem;
 }
 
-.pBambooSocks {
-  min-height: 23px;
-  max-height: 46px;
-  align-self: stretch;
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  color: var(--text-color);
-}
+.product-picture-preview {
 
-.p89 {
-  color: var(--text-color);
-  font-family: Source Sans Pro;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-}
-
-.buttonOpenItem {
   display: flex;
-  padding: 10px 16px;
-  justify-content: center;
+  height: 10.375rem;
+  padding: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
   align-self: stretch;
+}
+
+.product-name-prev {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.button-outline {
+  width: 100%;
   border: 1px solid var(--primary-color);
 }
 
