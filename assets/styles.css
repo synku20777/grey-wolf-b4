@@ -366,7 +366,7 @@ footer {
   /* Adjust the spacing between items as needed */
 }
 
-.Contact-item {
+.icon-text {
   display: inline-flex;
   /* Display icon and text in the same line */
   align-items: center;
@@ -374,20 +374,10 @@ footer {
   gap: 8px;
 }
 
-.Contact-item img {
-  width: 14px;
-  height: 14px;
+.icon-text img {
+  width: 20px;
+  height: 20px;
 }
-
-.Contact-item span {
-  color: var(--text-color);
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 
 .email-container {
   display: flex;
@@ -443,13 +433,6 @@ footer {
   row-gap: 8px;
   align-self: stretch;
   flex-wrap: wrap;
-}
-
-.some-icon {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-
 }
 
 .footer-links {
