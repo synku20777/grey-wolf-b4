@@ -45,7 +45,8 @@ main {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: 'Lora', serif;
   margin: 0px;
   line-height: 125%;
@@ -65,6 +66,10 @@ h3 {
 
 h4 {
   font-size: 1.625rem;
+}
+
+h5 {
+font-size: 1rem;
 }
 
 /* Remove bullet points from all unordered lists */
@@ -616,15 +621,6 @@ align-items: center;
 gap: 4px;
 }
 
-.review-header-text {
-  color: #000;
-font-family: Lora;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 125%; /* 20px */
-margin: 0;
-}
 
 .rating img {
   width: 20px;
