@@ -81,40 +81,120 @@
       </div>
     </nav>
     <main>
-      <!--Product image-->
-      <div class="product-picture">
-        <!--Favorite button-->
-        <div class="favorite-container">
-          <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
+      <div class="main-container">
+        <!-- breadcrumbs -->
+        <nav aria-label="breadcrumbs">
+          <ul class="breadcrumb">
+            <li><a class="navigation-link" href="index.html">Home</a></li>
+            <img class="icon" src="assets\icons\Forward.svg" alt=">" />
+            <li><a class="navigation-link" href="category.html">Basics</a></li>
+            <img class="icon" src="assets\icons\Forward.svg" alt=">" />
+            <li>
+              <a class="navigation-link" href="#">Seamless bamboo socks</a>
+            </li>
+          </ul>
+        </nav>
+        <!--Product image-->
+        <div class="product">
+          <div class="product-picture">
+            <!--Favorite button-->
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
+            </div>
+            <!--Carousel-->
+            <div class="carousel">
+              <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
+              <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
+              <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
+            </div>
+          </div>
+          <div class="product-description">
+            <h3>Seamless bamboo socks</h3>
+            <div class="label-option" id="Size">
+              <p>Size</p>
+              <div class="button-row">
+                <input
+                  type="radio"
+                  name="size"
+                  id="size-option-1"
+                  class="hidden-radio"
+                />
+                <label for="size-option-1" class="button-outline"> 36-38</label>
+                <input
+                  type="radio"
+                  name="size"
+                  id="size-option-2"
+                  class="hidden-radio"
+                />
+                <label for="size-option-2" class="button-outline"> 39-42</label>
+                <input
+                  type="radio"
+                  name="size"
+                  id="size-option-3"
+                  class="hidden-radio"
+                />
+                <label for="size-option-3" class="button-outline"> 43-46</label>
+              </div>
+            </div>
+            <div class="label-option" id="Color">
+              <p>Color</p>
+              <div class="button-row">
+                <div class="button-row">
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color-option-1"
+                    class="hidden-radio"
+                  />
+                  <label for="color-option-1" class="button-secondary"
+                    >White</label
+                  >
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color-option-2"
+                    class="hidden-radio"
+                  />
+                  <label for="color-option-2" class="button-secondary"
+                    >black</label
+                  >
+                  <input
+                    type="radio"
+                    name="color"
+                    id="color-option-3"
+                    class="hidden-radio"
+                  />
+                  <label for="color-option-3" class="button-secondary"
+                    >Terracota
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="button-primary">Add to cart</button>
+          </div>
         </div>
-        <!--Carousel-->
-        <div class="carousel">
-          <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-          <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-          <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
+        <!--Reviews-->
+        <div class="Review-div">
+          <div id="title-left"><h2>Reviews</h2></div>
+          <div class="Review">
+            <div class="review-header">
+              <div class="icon-text">
+                <h5>5</h5>
+                <img src="assets/icons/Star 1.svg" alt="Star" />
+              </div>
+              <h5>Name Surename</h5>
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
+              non cumque eius qui deleniti repudiandae omnis possimus at ab
+              saepe, ipsam optio, iusto facilis dolor! Aspernatur at accusamus
+              sunt aperiam.
+            </p>
+          </div>
         </div>
       </div>
     </main>
 
-  <!--Reviews-->
-  <div class="Review-div">
-    <div>
-      <h2>Reviews</h2>
-    </div>
-    <div class="Review">
-      <div class="review-header">
-        <div class="icon-text">
-          <h5>5</h5>
-          <img src="assets/icons/Star 1.svg" alt="Star">
-        </div>
-        <h5>Name Surename</h5>
-      </div>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, non cumque eius qui deleniti repudiandae omnis possimus at ab saepe, ipsam optio, iusto facilis dolor! Aspernatur at accusamus sunt aperiam.</p>
-    </div>
-
-  </div>
-
-    
     <footer>
       <h2>Contact</h2>
       <div class="Contact">
