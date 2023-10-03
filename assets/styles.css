@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap);
 
+:root {
+  --primary-color: #3A422D;
+  --secondary-color: #938066;
+  --background-color: #E5E5E3;
+  --text-color: #171616;
+  --white-color: #FCFEFE;
+  --font-family-sans: 'Source Sans Pro', sans-serif;
+  --font-family-serif: 'Lora', serif
+}
+
 .nav-list li,
 h1,
 h2,
@@ -47,16 +57,6 @@ footer {
   padding: 0
 }
 
-:root {
-  --primary-color: #3A422D;
-  --secondary-color: #938066;
-  --background-color: #E5E5E3;
-  --text-color: #171616;
-  --white-color: #FCFEFE;
-  --font-family-sans: 'Source Sans Pro', sans-serif;
-  --font-family-serif: 'Lora', serif
-}
-
 body {
   font-family: var(--font-family-sans);
   background-color: var(--background-color)
@@ -90,8 +90,11 @@ h5 {
 }
 
 p {
-  font-family: sans-serif;
-  font-size: 1rem
+  font-family: sans-serif
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 h3 {
@@ -102,7 +105,8 @@ h4 {
   font-size: 1.625rem
 }
 
-h5 {
+h5,
+p {
   font-size: 1rem
 }
 
@@ -115,7 +119,7 @@ ul {
 .button-primary,
 .button-secondary {
   display: flex;
-  border: none;
+  border: 0;
   padding: .625rem 1rem;
   justify-content: center;
   align-items: center;
@@ -145,18 +149,22 @@ nav.navbar {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   padding: 1rem .75rem;
   justify-content: space-between;
-  align-items: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
   z-index: 1000
 }
 
-.navbar-gutter {
+.nav-list li,
+.navbar-gutter,
+nav.navbar {
   display: flex;
+  align-items: center
+}
+
+.nav .nav-list,
+.navbar-gutter {
   justify-content: flex-end;
-  align-items: center;
   gap: .25rem
 }
 
@@ -173,7 +181,6 @@ nav.navbar {
   align-items: flex-start;
   gap: 1rem;
   position: absolute;
-  justify-content: flex-end;
   z-index: 1;
   top: 0;
   right: -100%;
@@ -184,15 +191,13 @@ nav.navbar {
 }
 
 .nav-list li {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center
+  justify-content: space-between
 }
 
 .input-hidden {
-  border: none;
+  border: 0;
   padding: 0
 }
 
@@ -213,19 +218,16 @@ nav.navbar {
 }
 
 .input-wrapper input:focus {
-  border: none;
+  border: 0;
   outline: 0
 }
 
 .nav-list li .sidebar-item {
-  width: 100%;
-  display: inherit;
   padding: .75rem 0;
-  justify-content: inherit;
-  align-items: inherit;
   align-self: stretch
 }
 
+.nav-list li .sidebar-item,
 .sidebar-item a {
   width: 100%;
   display: inherit;
@@ -293,12 +295,10 @@ nav.navbar {
 }
 
 .hero-section {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .35) 110.05%) center center/cover, url('images/6471e6f88712be98b39d421fdd164345.png') center center/cover, center center/cover no-repeat #d3d3d3;
-  display: flex;
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, .35) 110.05%) center center/cover, url(images/6471e6f88712be98b39d421fdd164345.png)center center/cover, center center/cover no-repeat #d3d3d3;
   width: 100%;
   height: 40.75rem;
   padding: 1.5rem .75rem;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
@@ -306,7 +306,8 @@ nav.navbar {
 }
 
 .categories,
-.container-wrapper {
+.container-wrapper,
+.hero-section {
   display: flex;
   flex-direction: column
 }
@@ -350,10 +351,14 @@ footer {
   padding: 1.5rem .75rem
 }
 
-#also-buy,
+#also-buy {
+  flex-direction: column
+}
+
 .Contact,
 .Sitemap,
 .links-container,
+.links-container ul,
 footer {
   flex-direction: column;
   display: flex
@@ -434,33 +439,33 @@ footer {
 }
 
 .links-container ul {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   gap: .5rem;
   padding: 0
 }
 
+.footer-links,
 .smm-container {
   display: flex;
+  align-items: flex-start
+}
+
+.smm-container {
   width: 3.8125rem;
-  align-items: flex-start;
   align-content: flex-start;
   row-gap: .5rem;
   flex-wrap: wrap
 }
 
 .footer-links {
-  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   align-self: stretch
 }
 
 .center-link,
 .left-link,
 .right-link {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   font-style: normal
 }
@@ -473,20 +478,22 @@ footer {
   padding: 0 .75rem
 }
 
-.product-net {
+.product-net,
+.product-preview {
   display: flex;
+  align-items: flex-start
+}
+
+.product-net {
   width: 100%;
-  align-items: flex-start;
   align-content: flex-start;
   gap: 1.5rem .5rem;
   flex-wrap: wrap
 }
 
 .product-preview {
-  display: flex;
   width: 11.1875rem;
   flex-direction: column;
-  align-items: flex-start;
   gap: .5rem;
   flex-shrink: 0
 }
@@ -505,43 +512,43 @@ footer {
 }
 
 #product-1 {
-  background: url('images/product-1.png'), 50% #d3d3d3
+  background: url(images/product-1.png), 50%#d3d3d3
 }
 
 #product-2 {
-  background: url('images/product-2.png'), 50% #d3d3d3
+  background: url(images/product-2.png), 50%#d3d3d3
 }
 
 #product-3 {
-  background: url('images/product-3.png'), 50% #d3d3d3
+  background: url(images/product-3.png), 50%#d3d3d3
 }
 
 #product-4 {
-  background: url('images/product-4.png'), 50% #d3d3d3
+  background: url(images/product-4.png), 50%#d3d3d3
 }
 
 #product-5 {
-  background: url('images/product-5.png'), 50% #d3d3d3
+  background: url(images/product-5.png), 50%#d3d3d3
 }
 
 #product-6 {
-  background: url('images/product-6.png'), 50% #d3d3d3
+  background: url(images/product-6.png), 50%#d3d3d3
 }
 
 #product-7 {
-  background: url('images/product-7.png'), 50% #d3d3d3
+  background: url(images/product-7.png), 50%#d3d3d3
 }
 
 #product-8 {
-  background: url('images/product-8.png'), 50% #d3d3d3
+  background: url(images/product-8.png), 50%#d3d3d3
 }
 
 #product-9 {
-  background: url('images/product-9.png'), 50% #d3d3d3
+  background: url(images/product-9.png), 50%#d3d3d3
 }
 
 #product-10 {
-  background: url('images/product-10.png'), 50% #d3d3d3
+  background: url(images/product-10.png), 50%#d3d3d3
 }
 
 .product-name-prev {
@@ -555,16 +562,20 @@ footer {
   border: 1px solid var(--primary-color)
 }
 
+.favorite-container img,
 .product-picture {
   display: flex;
+  padding: 8px;
+  align-items: center
+}
+
+.product-picture {
   width: 363px;
   height: 337px;
-  padding: 8px;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   flex-shrink: 0;
-  background: url('images/socks-2.png') center bottom/110% 110% no-repeat, center bottom/110% 110% no-repeat #d3d3d3
+  background: url(images/socks-2.png)center bottom/110% 110%no-repeat, center bottom/110% 110%no-repeat #d3d3d3
 }
 
 .favorite-container {
@@ -576,10 +587,7 @@ footer {
 }
 
 .favorite-container img {
-  display: flex;
-  padding: 8px;
   justify-content: center;
-  align-items: center;
   gap: 16px;
   cursor: pointer;
   filter: invert(1)
@@ -614,12 +622,12 @@ footer {
 .product-description {
   display: inline-flex;
   flex-direction: column;
-  align-self: stretch;
-  align-items: flex-start;
   gap: 1rem
 }
 
-.button-row {
+.button-row,
+.label-option,
+.product-description {
   align-self: stretch;
   align-items: flex-start
 }
@@ -653,9 +661,13 @@ footer {
   overflow: scroll
 }
 
+.Review,
+.Review-div {
+  flex-direction: column
+}
+
 .Review-div {
   display: inline-flex;
-  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   gap: 16px
@@ -670,11 +682,11 @@ footer {
 .Review {
   display: flex;
   width: 363px;
-  flex-direction: column;
   align-items: flex-start;
   gap: 8px
 }
 
+.rating,
 .review-header {
   display: flex;
   align-items: center;
@@ -682,8 +694,6 @@ footer {
 }
 
 .rating {
-  display: flex;
   justify-content: center;
-  align-items: center;
   gap: 4px
 }

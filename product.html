@@ -1,449 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
-    <link rel="stylesheet" href="assets/styles.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html"><h4>GW</h4></a>
-      </div>
-      <div class="navbar-gutter">
-        <button type="button" class="button-link" id="cart">
-          <img src="assets/icons/shopping bag.svg" alt="Shopping Cart Icon" />
-        </button>
-        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
-        <label class="button-link" for="nav-toggle">
-          <img src="assets/icons/Menu.svg" alt="menu" />
-        </label>
-        <div class="nav">
-          <div class="nav-list">
-            <label for="nav-toggle" class="button-primary" id="close">
-              <img src="assets/icons/white/Close.svg" alt="Close Menu" />
-            </label>
-            <div class="input-wrapper">
-              <img class="icon" src="assets\icons\Search.svg" alt="search" />
-              <input
-                type="text"
-                placeholder="Search"
-                autocomplete="off"
-                class="input-hidden"
-              />
-            </div>
-            <ul>
-              <li>
-                <div class="sidebar-item">
-                  <a href="category.html" class="navigation-link"
-                    >Basics
-                    <img
-                      class="icon"
-                      src="assets/icons/Forward.svg"
-                      alt="forward"
-                  /></a>
-                </div>
-              </li>
-              <li>
-                <div class="sidebar-item">
-                  Sweaters
-                  <img
-                    class="icon"
-                    src="assets/icons/Forward.svg"
-                    alt="forward"
-                  />
-                </div>
-              </li>
-              <li>
-                <div class="sidebar-item">
-                  Jeans
-                  <img
-                    class="icon"
-                    src="assets/icons/Forward.svg"
-                    alt="forward"
-                  />
-                </div>
-              </li>
-              <li>
-                <div class="sidebar-item">
-                  Coats
-                  <img
-                    class="icon"
-                    src="assets/icons/Forward.svg"
-                    alt="forward"
-                  />
-                </div>
-              </li>
-            </ul>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width,initial-scale=1"
+    name="viewport"
+  /><title>Product</title
+  ><link href="assets/styles.css" rel="stylesheet" />
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><h4>GW</h4></a>
+    </div>
+    <div class="navbar-gutter">
+      <button class="button-link" id="cart" type="button">
+        <img src="assets/icons/shopping bag.svg" alt="Shopping Cart Icon" />
+      </button>
+      <input class="hidden-checkbox" id="nav-toggle" type="checkbox" />
+      <label class="button-link" for="nav-toggle"
+        ><img src="assets/icons/Menu.svg" alt="menu"
+      /></label>
+      <div class="nav">
+        <div class="nav-list">
+          <label class="button-primary" for="nav-toggle" id="close"
+            ><img src="assets/icons/white/Close.svg" alt="Close Menu"
+          /></label>
+          <div class="input-wrapper">
+            <img src="assets\icons\Search.svg" class="icon" alt="search" />
+            <input
+              class="input-hidden"
+              autocomplete="off"
+              placeholder="Search"
+            />
           </div>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <div class="main-container">
-        <!-- breadcrumbs -->
-        <nav aria-label="breadcrumbs">
-          <ul class="breadcrumb">
-            <li><a class="navigation-link" href="index.html">Home</a></li>
-            <img class="icon" src="assets\icons\Forward.svg" alt=">" />
-            <li><a class="navigation-link" href="category.html">Basics</a></li>
-            <img class="icon" src="assets\icons\Forward.svg" alt=">" />
+          <ul>
             <li>
-              <a class="navigation-link" href="#">Seamless bamboo socks</a>
+              <div class="sidebar-item">
+                <a href="category.html" class="navigation-link"
+                  >Basics
+                  <img
+                    src="assets/icons/Forward.svg"
+                    class="icon"
+                    alt="forward"
+                /></a>
+              </div>
+            </li>
+            <li>
+              <div class="sidebar-item">
+                Sweaters
+                <img
+                  src="assets/icons/Forward.svg"
+                  class="icon"
+                  alt="forward"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="sidebar-item">
+                Jeans
+                <img
+                  src="assets/icons/Forward.svg"
+                  class="icon"
+                  alt="forward"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="sidebar-item">
+                Coats
+                <img
+                  src="assets/icons/Forward.svg"
+                  class="icon"
+                  alt="forward"
+                />
+              </div>
             </li>
           </ul>
-        </nav>
-        <!--Product image-->
-        <div class="product">
-          <div class="product-picture">
-            <!--Favorite button-->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="main-container">
+      <nav aria-label="breadcrumbs">
+        <ul class="breadcrumb">
+          <li><a href="index.html" class="navigation-link">Home</a></li>
+          <img src="assets\icons\Forward.svg" class="icon" alt=">" />
+          <li><a href="category.html" class="navigation-link">Basics</a></li>
+          <img src="assets\icons\Forward.svg" class="icon" alt=">" />
+          <li><a href="#" class="navigation-link">Seamless bamboo socks</a></li>
+        </ul>
+      </nav>
+      <div class="product">
+        <div class="product-picture">
+          <div class="favorite-container">
+            <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
+          </div>
+          <div class="carousel-preview">
+            <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+            <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+            <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+          </div>
+        </div>
+        <div class="product-description">
+          <h3>Seamless bamboo socks</h3>
+          <div class="label-option" id="Size">
+            <p>Size</p>
+            <div class="button-row">
+              <input
+                class="hidden-radio"
+                id="size-option-1"
+                type="radio"
+                name="size"
+              />
+              <label class="button-outline" for="size-option-1">36-38</label>
+              <input
+                class="hidden-radio"
+                id="size-option-2"
+                type="radio"
+                name="size"
+              />
+              <label class="button-outline" for="size-option-2">39-42</label>
+              <input
+                class="hidden-radio"
+                id="size-option-3"
+                type="radio"
+                name="size"
+              />
+              <label class="button-outline" for="size-option-3">43-46</label>
+            </div>
+          </div>
+          <div class="label-option" id="Color">
+            <p>Color</p>
+            <div class="button-row">
+              <div class="button-row">
+                <input
+                  class="hidden-radio"
+                  id="color-option-1"
+                  type="radio"
+                  name="color"
+                />
+                <label class="button-secondary" for="color-option-1"
+                  >White</label
+                >
+                <input
+                  class="hidden-radio"
+                  id="color-option-2"
+                  type="radio"
+                  name="color"
+                />
+                <label class="button-secondary" for="color-option-2"
+                  >black</label
+                >
+                <input
+                  class="hidden-radio"
+                  id="color-option-3"
+                  type="radio"
+                  name="color"
+                />
+                <label class="button-secondary" for="color-option-3"
+                  >Terracota</label
+                >
+              </div>
+            </div>
+          </div>
+          <button class="button-primary">Add to cart</button>
+        </div>
+      </div>
+      <div class="Review-div">
+        <div id="title-left"><h2>Reviews</h2></div>
+        <div class="Review">
+          <div class="review-header">
+            <div class="icon-text">
+              <h5>5</h5>
+              <img src="assets/icons/Star 1.svg" alt="Star" />
+            </div>
+            <h5>Name Surename</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, non
+            cumque eius qui deleniti repudiandae...
+          </p>
+        </div>
+        <div class="Review">
+          <div class="review-header">
+            <div class="icon-text">
+              <h5>5</h5>
+              <img src="assets/icons/Star 1.svg" alt="Star" />
+            </div>
+            <h5>Name Surename</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, non
+            cumque eius qui deleniti repudiandae...
+          </p>
+        </div>
+        <div class="Review">
+          <div class="review-header">
+            <div class="icon-text">
+              <h5>5</h5>
+              <img src="assets/icons/Star 1.svg" alt="Star" />
+            </div>
+            <h5>Name Surename</h5>
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam, non
+            cumque eius qui deleniti repudiandae...
+          </p>
+        </div>
+        <div>
+          <button class="button-link">
+            See all reviews
+            <img
+              src="assets/icons/Forward.svg"
+              alt="Forward"
+              style="width: 20px; height: 20px"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="also-buy">
+      <h4>People also buy</h4>
+      <div class="carousel">
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-9">
             <div class="favorite-container">
               <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
             </div>
-            <!--Carousel-->
             <div class="carousel-preview">
-              <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-              <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
             </div>
           </div>
-          <div class="product-description">
-            <h3>Seamless bamboo socks</h3>
-            <div class="label-option" id="Size">
-              <p>Size</p>
-              <div class="button-row">
-                <input
-                  type="radio"
-                  name="size"
-                  id="size-option-1"
-                  class="hidden-radio"
-                />
-                <label for="size-option-1" class="button-outline"> 36-38</label>
-                <input
-                  type="radio"
-                  name="size"
-                  id="size-option-2"
-                  class="hidden-radio"
-                />
-                <label for="size-option-2" class="button-outline"> 39-42</label>
-                <input
-                  type="radio"
-                  name="size"
-                  id="size-option-3"
-                  class="hidden-radio"
-                />
-                <label for="size-option-3" class="button-outline"> 43-46</label>
-              </div>
-            </div>
-            <div class="label-option" id="Color">
-              <p>Color</p>
-              <div class="button-row">
-                <div class="button-row">
-                  <input
-                    type="radio"
-                    name="color"
-                    id="color-option-1"
-                    class="hidden-radio"
-                  />
-                  <label for="color-option-1" class="button-secondary"
-                    >White</label
-                  >
-                  <input
-                    type="radio"
-                    name="color"
-                    id="color-option-2"
-                    class="hidden-radio"
-                  />
-                  <label for="color-option-2" class="button-secondary"
-                    >black</label
-                  >
-                  <input
-                    type="radio"
-                    name="color"
-                    id="color-option-3"
-                    class="hidden-radio"
-                  />
-                  <label for="color-option-3" class="button-secondary"
-                    >Terracota
-                  </label>
-                </div>
-              </div>
-            </div>
-            <button class="button-primary">Add to cart</button>
-          </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
         </div>
-        <!--Reviews-->
-        <div class="Review-div">
-          <div id="title-left"><h2>Reviews</h2></div>
-          <div class="Review">
-            <div class="review-header">
-              <div class="icon-text">
-                <h5>5</h5>
-                <img src="assets/icons/Star 1.svg" alt="Star" />
-              </div>
-              <h5>Name Surename</h5>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-10">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
             </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
-              non cumque eius qui deleniti repudiandae...
-            </p>
-          </div>
-          <div class="Review">
-            <div class="review-header">
-              <div class="icon-text">
-                <h5>5</h5>
-                <img src="assets/icons/Star 1.svg" alt="Star" />
-              </div>
-              <h5>Name Surename</h5>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
             </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
-              non cumque eius qui deleniti repudiandae...
-            </p>
           </div>
-          <div class="Review">
-            <div class="review-header">
-              <div class="icon-text">
-                <h5>5</h5>
-                <img src="assets/icons/Star 1.svg" alt="Star" />
-              </div>
-              <h5>Name Surename</h5>
-            </div>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
-              non cumque eius qui deleniti repudiandae...
-            </p>
-          </div>
-          <div>
-            <button class="button-link">
-              See all reviews
-              <img
-                src="assets/icons/Forward.svg"
-                alt="Forward"
-                style="width: 20px; height: 20px"
-              />
-            </button>
-          </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
         </div>
-      </div>
-      <!-- carousel -->
-      <div id="also-buy">
-        <h4>People also buy</h4>
-        <div class="carousel">
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-9">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-8">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
-          </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-10">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
           </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-8">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
+        </div>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-7">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
-          </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-7">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
           </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-5">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
+        </div>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-5">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
-          </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-3">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
           </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-1">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
+        </div>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-3">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
-          </div>
-          <div class="product-preview">
-            <div class="product-picture-preview" id="product-2">
-              <!--Favorite button-->
-              <div class="favorite-container">
-                <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
-              </div>
-              <!--Carousel-->
-              <div class="carousel-preview">
-                <img class="carousel-icon" src="assets/icons/Ellipse 1.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-                <img class="carousel-icon" src="assets/icons/Ellipse 2.svg" />
-              </div>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
             </div>
-            <p class="product-name-prev">Seamless bamboo socks</p>
-            <p class="price">89 dkk</p>
-            <a class="navigation-link" href="product.html"
-              ><button class="button-outline">Open Item</button></a
-            >
           </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
+        </div>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-1">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
+            </div>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+            </div>
+          </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
+        </div>
+        <div class="product-preview">
+          <div class="product-picture-preview" id="product-2">
+            <div class="favorite-container">
+              <img src="assets/icons/Heart.svg" class="icon" alt="favorite" />
+            </div>
+            <div class="carousel-preview">
+              <img src="assets/icons/Ellipse 1.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+              <img src="assets/icons/Ellipse 2.svg" class="carousel-icon" />
+            </div>
+          </div>
+          <p class="product-name-prev">Seamless bamboo socks</p>
+          <p class="price">89 dkk</p>
+          <a href="product.html" class="navigation-link"
+            ><button class="button-outline">Open Item</button></a
+          >
         </div>
       </div>
-    </main>
-
-    <footer>
-      <h2>Contact</h2>
-      <div class="Contact">
-        <div class="Contact-container">
-          <div class="icon-text">
-            <img src="assets/icons/Location.svg" alt="Location" />
-            <span>Denmark, Vejvej 69, st. tv.</span>
-          </div>
-          <div class="icon-text">
-            <img src="assets/icons/Call.svg" alt="Call" />
-            <span>(0045) 42529896</span>
-          </div>
+    </div>
+  </main>
+  <footer>
+    <h2>Contact</h2>
+    <div class="Contact">
+      <div class="Contact-container">
+        <div class="icon-text">
+          <img src="assets/icons/Location.svg" alt="Location" />
+          <span>Denmark, Vejvej 69, st. tv.</span>
+        </div>
+        <div class="icon-text">
+          <img src="assets/icons/Call.svg" alt="Call" />
+          <span>(0045) 42529896</span>
         </div>
       </div>
-      <form class="email-container">
-        <!-- Email input field -->
-        <div class="input-wrapper">
-          <input
-            type="text"
-            placeholder="Email"
-            autocomplete="off"
-            class="input-hidden"
-          />
-        </div>
-        <!-- Subscribe button -->
-        <button class="button-primary">Subscribe</button>
-      </form>
-
-      <div class="navigation-container">
-        <div class="Sitemap">
-          <h2>Sitemap</h2>
-          <div class="links-container">
-            <ul>
-              <li><a class="navigation-link" href="index.html">Forside</a></li>
-              <li>
-                <a class="navigation-link" href="category.html">Kategoriside</a>
-              </li>
-              <li>
-                <a class="navigation-link" href="product.html">Produktside</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="smm-container">
-          <img class="icon" src="assets/icons/facebook.svg" />
-          <img class="icon" src="assets/icons/instagram.svg" />
-          <img class="icon" src="assets/icons/linkedin.svg" />
-          <img class="icon" src="assets/icons/pinterest.svg" />
-          <img class="icon" src="assets/icons/tiktok.svg" />
-          <img class="icon" src="/assets/icons/youtube.svg" />
+    </div>
+    <form class="email-container">
+      <div class="input-wrapper">
+        <input class="input-hidden" autocomplete="off" placeholder="Email" />
+      </div>
+      <button class="button-primary">Subscribe</button>
+    </form>
+    <div class="navigation-container">
+      <div class="Sitemap">
+        <h2>Sitemap</h2>
+        <div class="links-container">
+          <ul>
+            <li><a href="index.html" class="navigation-link">Forside</a></li>
+            <li>
+              <a href="category.html" class="navigation-link">Kategoriside</a>
+            </li>
+            <li>
+              <a href="product.html" class="navigation-link">Produktside</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-links">
-        <a href="cookies.html" class="left-link">Cookies</a>
-        <a href="terms.html" class="center-link">Terms of Use</a>
-        <a href="privacy.html" class="right-link">Privacy Policy</a>
+      <div class="smm-container">
+        <img src="assets/icons/facebook.svg" class="icon" />
+        <img src="assets/icons/instagram.svg" class="icon" />
+        <img src="assets/icons/linkedin.svg" class="icon" />
+        <img src="assets/icons/pinterest.svg" class="icon" />
+        <img src="assets/icons/tiktok.svg" class="icon" />
+        <img src="/assets/icons/youtube.svg" class="icon" />
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="footer-links">
+      <a href="cookies.html" class="left-link">Cookies</a>
+      <a href="terms.html" class="center-link">Terms of Use</a>
+      <a href="privacy.html" class="right-link">Privacy Policy</a>
+    </div>
+  </footer>
 </html>
