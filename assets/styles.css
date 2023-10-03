@@ -1,12 +1,50 @@
-/*main stuff, don't touch*/
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap);
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+.nav-list li,
+h1,
+h2,
+h3,
+h4,
+h5,
+nav.navbar {
+  color: var(--text-color)
+}
+
+.button-primary,
+.button-secondary,
+.hero-section,
+.on--dark {
+  color: var(--white-color)
+}
+
+.categories,
+.category,
+.category-card,
+.imgArticle,
+.input-wrapper,
+.nav-list li {
+  align-self: stretch
+}
+
+.button-link,
+.carousel-preview,
+.logo a,
+button,
+label {
+  cursor: pointer
+}
+
+#also-buy,
+footer {
+  padding: .75rem
+}
 
 *,
-*::before,
-*::after {
+::after,
+::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
 :root {
@@ -15,22 +53,22 @@
   --background-color: #E5E5E3;
   --text-color: #171616;
   --white-color: #FCFEFE;
+  --font-family-sans: 'Source Sans Pro', sans-serif;
+  --font-family-serif: 'Lora', serif
 }
 
-
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  margin: 0%;
-  background-color: #E5E5E3;
+  font-family: var(--font-family-sans);
+  background-color: var(--background-color)
 }
 
 img {
   width: 100%;
-  height: auto;
+  height: auto
 }
 
 .icon {
-  width: auto;
+  width: auto
 }
 
 main {
@@ -38,114 +76,97 @@ main {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 2.4375rem;
+  gap: 2.4375rem
 }
-
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lora', serif;
-  margin: 0px;
+  font-family: var(--font-family-serif);
   line-height: 125%;
-  font-weight: 400;
-  color: var(--text-color);
+  font-weight: 400
 }
 
 p {
-  margin: 0;
   font-family: sans-serif;
-  font-size: 1rem;
+  font-size: 1rem
 }
 
 h3 {
-  font-size: 1.8125rem;
+  font-size: 1.8125rem
 }
 
 h4 {
-  font-size: 1.625rem;
+  font-size: 1.625rem
 }
 
 h5 {
-  font-size: 1rem;
+  font-size: 1rem
 }
 
-/* Remove bullet points from all unordered lists */
 ul {
-  list-style-type: none;
+  list-style-type: none
 }
-
-button,
-label,
-.button-link {
-  cursor: pointer;
-}
-
-/* end */
-
-/* buttons under */
 
 .button-link,
+.button-outline,
 .button-primary,
-.button-secondary,
-.button-outline {
+.button-secondary {
   display: flex;
   border: none;
-  padding: 0.625rem 1rem;
+  padding: .625rem 1rem;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem
 }
 
 .button-primary {
-  color: var(--white-color);
-  background: var(--primary-color);
+  background: var(--primary-color)
 }
 
 .button-secondary {
-  color: var(--white-color);
-  background: var(--secondary-color);
+  background: var(--secondary-color)
 }
 
 .button-link {
-  background: transparent;
-  transition: border-width 0.3s ease;
+  background: 0 0;
+  transition: border-width .3s
 }
 
-
-/*navbar udner */
+.input-wrapper,
+nav.navbar {
+  background: var(--white-color);
+  width: 100%
+}
 
 nav.navbar {
-  width: 100%;
   position: fixed;
-  top: 0%;
-  left: 0%;
-  color: var(--text-color);
+  top: 0;
+  left: 0;
   display: flex;
-  padding: 1rem 0.75rem;
+  padding: 1rem .75rem;
   justify-content: space-between;
   align-items: center;
-  background: var(--white-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  z-index: 1000;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .25);
+  z-index: 1000
 }
 
 .navbar-gutter {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.25rem;
+  gap: .25rem
 }
 
 .hidden-checkbox {
-  display: none;
+  display: none
 }
 
 .nav .nav-list {
-  margin: 0%;
-  padding: 1rem 1rem 10rem 1rem;
+  margin: 0;
+  padding: 1rem 1rem 10rem;
   display: flex;
   width: 70%;
   flex-direction: column;
@@ -156,109 +177,89 @@ nav.navbar {
   z-index: 1;
   top: 0;
   right: -100%;
-  /* Initially positioned outside the viewport */
   background: var(--background-color);
-  transition: right 0.444s ease-out;
+  transition: right 444ms ease-out;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: auto
 }
 
 .nav-list li {
   font-family: 'Source Sans Pro', sans-serif;
-  color: var(--text-color);
   font-size: 1.25rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
+  align-items: center
 }
 
 .input-hidden {
   border: none;
-  padding: 0%;
+  padding: 0
 }
 
 .input-wrapper {
-  width: 100%;
   display: flex;
-  padding: 0.75rem 0.5rem;
+  padding: .75rem .5rem;
   position: relative;
-  gap: 0.5rem;
+  gap: .5rem;
   justify-content: left;
   align-items: stretch;
-  align-self: stretch;
-  border-radius: 0%;
-  border: 1px solid var(--text-color);
-  background: var(--white-color);
+  border-radius: 0;
+  border: 1px solid var(--text-color)
 }
 
 .input-wrapper input {
   width: 100%;
-  padding-right: 30px;
-  /* Space for the icon */
+  padding-right: 30px
 }
 
 .input-wrapper input:focus {
   border: none;
-  outline: none;
+  outline: 0
 }
-
 
 .nav-list li .sidebar-item {
   width: 100%;
   display: inherit;
-  padding: 0.75rem 0rem;
+  padding: .75rem 0;
   justify-content: inherit;
   align-items: inherit;
-  align-self: stretch;
+  align-self: stretch
 }
 
 .sidebar-item a {
   width: 100%;
   display: inherit;
   justify-content: inherit;
-  align-items: inherit;
+  align-items: inherit
 }
 
 .nav-list ul {
   width: 100%;
-  margin: 0px;
-  padding: 0;
+  margin: 0;
+  padding: 0
 }
 
-/* overlay below */
 .nav::before {
   content: "";
   position: fixed;
-  /* Fixed positioning to cover the entire viewport */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Semi-transparent black */
+  background-color: rgba(0, 0, 0, .5);
   z-index: -1;
-  /* Place it behind the nav-list */
   opacity: 0;
-  transition: opacity 0.3s ease-in;
-  pointer-events: none;
-  /* Ensures it doesn't interfere with clicks */
+  transition: opacity .3s ease-in;
+  pointer-events: none
 }
 
-/* side menu transitions */
 #nav-toggle:checked+label+.nav .nav-list {
-  right: 0;
-  /* Slide in to be fully visible */
+  right: 0
 }
 
 #nav-toggle:checked+label+.nav::before {
-  opacity: 1;
-  /* Show the overlay when the menu is open */
+  opacity: 1
 }
-
-/* side menu end */
-
-/* Breadcrumbs  */
 
 .breadcrumbs {
   display: flex;
@@ -266,245 +267,210 @@ nav.navbar {
   width: 100%;
   align-items: center;
   align-content: center;
-  gap: 0.25rem 0.5rem;
+  gap: .25rem .5rem
 }
 
-/* Style for the breadcrumb list */
 .breadcrumb {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: flex
 }
 
 .breadcrumb li {
   display: flex;
-  align-items: center;
+  align-items: center
 }
 
-
-/* Add a separator between breadcrumb items */
 .breadcrumb li+li:before {
-  margin: 0 5;
+  margin: .5rem
 }
-
-/* breadcrumbs end */
-
 
 .logo a {
   color: inherit;
   text-decoration: none;
-  user-select: none;
-  cursor: pointer;
+  user-select: none
 }
 
-/* hero */
 .hero-section {
-  color: var(--white-color);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.35) 110.05%), url('images/6471e6f88712be98b39d421fdd164345.png'), lightgray -107.516px 0px / 167.179% 100% no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, .35) 110.05%) center center/cover, url('images/6471e6f88712be98b39d421fdd164345.png') center center/cover, center center/cover no-repeat #d3d3d3;
   display: flex;
   width: 100%;
   height: 40.75rem;
-  padding: 1.5rem 0.75rem;
+  padding: 1.5rem .75rem;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 2rem;
-  flex-shrink: 0;
+  flex-shrink: 0
 }
 
-/* hero end */
-
-/* category  */
+.categories,
+.container-wrapper {
+  display: flex;
+  flex-direction: column
+}
 
 .categories {
-  display: flex;
-  padding: 0rem 0.75rem;
-  flex-direction: column;
+  padding: 0 .75rem;
   align-items: flex-start;
-  gap: 3rem;
-  align-self: stretch;
+  gap: 3rem
 }
 
 .container-wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 2rem
 }
 
+.article,
 .category-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-  align-self: stretch;
+  gap: 1rem
+}
+
+.category-card,
+.links-container {
+  align-items: flex-start
 }
 
 .category {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
+  align-items: center
 }
 
-/* end */
-
-/* article */
+.article,
+footer {
+  align-items: flex-start
+}
 
 .article {
   background-color: var(--primary-color);
-  display: flex;
-  padding: 1.5rem 0.75rem;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
+  padding: 1.5rem .75rem
 }
 
-.on--dark {
-  color: var(--white-color);
+#also-buy,
+.Contact,
+.Sitemap,
+.links-container,
+footer {
+  flex-direction: column;
+  display: flex
+}
+
+.center-link,
+.left-link,
+.navigation-link,
+.right-link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 125%
 }
 
 .imgArticle {
   height: auto;
-  width: auto;
-  align-self: stretch;
+  width: auto
 }
 
-.article button {
-  width: 100%;
+.article button,
+.navigation-link,
+.product-description .button-primary,
+footer {
+  width: 100%
 }
-
-/* article end */
-
-/*Footer udner */
 
 footer {
-  display: flex;
-  width: 100%;
-  padding: 0.75rem;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 24px;
-  background: var(--background, #E5E5E3);
+  background: var(--background, #e5e5e3)
 }
 
 .Contact {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
+  gap: .5rem
 }
 
 .Contact-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  /* Adjust the spacing between items as needed */
+  gap: 10px
 }
 
 .icon-text {
   display: inline-flex;
-  /* Display icon and text in the same line */
   align-items: center;
-  /* Center items vertically */
-  gap: 8px;
+  gap: 8px
 }
 
-.icon-text img {
+.icon-text img,
+.rating img {
   width: 20px;
-  height: 20px;
+  height: 20px
 }
 
 .email-container {
   display: flex;
   align-items: flex-start;
   gap: 16px;
-  align-self: stretch;
+  align-self: stretch
+}
+
+.navigation-container,
+.smm-container {
+  justify-content: space-between;
+  align-self: stretch
 }
 
 .navigation-container {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
-  margin-bottom: 24px;
+  margin-bottom: 24px
 }
 
 .Sitemap {
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-}
-
-.links-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  gap: 8px
 }
 
 .links-container ul {
   display: flex;
   flex-direction: column;
   margin: 0;
-  gap: 0.5rem;
-  /* Remove the default margin */
-  padding: 0;
-}
-
-.navigation-link {
-  text-decoration: none;
-  color: var(--text-color);
-  width: 100%;
-  /* Body text/body_16 */
-  font-weight: 400;
-  line-height: 125%;
-  /* 20px */
+  gap: .5rem;
+  padding: 0
 }
 
 .smm-container {
   display: flex;
   width: 3.8125rem;
-  justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;
-  row-gap: 0.5rem;
-  align-self: stretch;
-  flex-wrap: wrap;
+  row-gap: .5rem;
+  flex-wrap: wrap
 }
 
 .footer-links {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  align-self: stretch;
+  align-self: stretch
 }
 
-.left-link,
 .center-link,
+.left-link,
 .right-link {
-  text-decoration: none;
-  /* Remove underlining */
-  color: var(--text-color);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
-  /* 20px */
+  font-style: normal
 }
-
-/*Product card Imran*/
 
 .main-container {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0rem 0.75rem;
+  padding: 0 .75rem
 }
 
 .product-net {
@@ -512,8 +478,8 @@ footer {
   width: 100%;
   align-items: flex-start;
   align-content: flex-start;
-  gap: 1.5rem 0.5rem;
-  flex-wrap: wrap;
+  gap: 1.5rem .5rem;
+  flex-wrap: wrap
 }
 
 .product-preview {
@@ -521,81 +487,73 @@ footer {
   width: 11.1875rem;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.5rem;
-  flex-shrink: 0;
+  gap: .5rem;
+  flex-shrink: 0
 }
 
 .product-picture-preview {
   display: flex;
   height: 10.375rem;
-  padding: 0.5rem;
+  padding: .5rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-position: center bottom !important;
+  background-position: center bottom !important
 }
 
 #product-1 {
-  background: url('images/product-1.png'), lightgray 50%;
+  background: url('images/product-1.png'), 50% #d3d3d3
 }
 
 #product-2 {
-  background: url('images/product-2.png'), lightgray 50%;
+  background: url('images/product-2.png'), 50% #d3d3d3
 }
 
 #product-3 {
-  background: url('images/product-3.png'), lightgray 50%;
+  background: url('images/product-3.png'), 50% #d3d3d3
 }
 
 #product-4 {
-  background: url('images/product-4.png'), lightgray 50%;
+  background: url('images/product-4.png'), 50% #d3d3d3
 }
 
 #product-5 {
-  background: url('images/product-5.png'), lightgray 50%;
+  background: url('images/product-5.png'), 50% #d3d3d3
 }
 
 #product-6 {
-  background: url('images/product-6.png'), lightgray 50%;
+  background: url('images/product-6.png'), 50% #d3d3d3
 }
 
 #product-7 {
-  background: url('images/product-7.png'), lightgray 50%;
+  background: url('images/product-7.png'), 50% #d3d3d3
 }
 
 #product-8 {
-  background: url('images/product-8.png'), lightgray 50%;
+  background: url('images/product-8.png'), 50% #d3d3d3
 }
 
 #product-9 {
-  background: url('images/product-9.png'), lightgray 50%;
+  background: url('images/product-9.png'), 50% #d3d3d3
 }
 
 #product-10 {
-  background: url('images/product-10.png'), lightgray 50%;
+  background: url('images/product-10.png'), 50% #d3d3d3
 }
 
 .product-name-prev {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1.125rem
 }
 
-.button-outline {
-  width: 100%;
-  border: 1px solid var(--primary-color);
-}
-
+.button-outline,
 .navigation-link+.button-outline {
   width: 100%;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primary-color)
 }
-
-
-
-/*Product picture Henrietta*/
 
 .product-picture {
   display: flex;
@@ -606,10 +564,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
-  background: url('images/socks-2.png'), lightgray 50% / cover no-repeat;
-  background-size: 110% 110%;
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  background: url('images/socks-2.png') center bottom/110% 110% no-repeat, center bottom/110% 110% no-repeat #d3d3d3
 }
 
 .favorite-container {
@@ -617,7 +572,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
-  align-self: stretch;
+  align-self: stretch
 }
 
 .favorite-container img {
@@ -627,19 +582,18 @@ footer {
   align-items: center;
   gap: 16px;
   cursor: pointer;
-  filter: invert(1);
+  filter: invert(1)
 }
 
 .carousel-preview {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  cursor: pointer;
+  gap: 8px
 }
 
 .carousel-icon {
   width: 8px;
-  height: 8px;
+  height: 8px
 }
 
 .product {
@@ -647,61 +601,47 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.5rem
 }
 
+#also-buy,
+.button-row {
+  gap: 1rem;
+  display: flex
+}
+
+.label-option,
 .product-description {
   display: inline-flex;
   flex-direction: column;
   align-self: stretch;
   align-items: flex-start;
-  gap: 1rem;
-}
-
-.label-option {
-  display: inline-flex;
-  flex-direction: column;
-  align-self: stretch;
-  align-items: flex-start;
-  gap: 1rem;
+  gap: 1rem
 }
 
 .button-row {
-  display: flex;
   align-self: stretch;
-  align-items: flex-start;
-  gap: 1rem;
+  align-items: flex-start
 }
 
 .hidden-radio {
   opacity: 0;
   position: absolute;
-  z-index: -1;
+  z-index: -1
 }
 
 .hidden-radio:checked+.button-outline {
-  transition: border-width 0.2s ease;
+  transition: border-width .2s;
   border-color: var(--primary-color);
   border-width: 2px;
   box-sizing: border-box;
-  height: 41.8182px;
+  height: 41.8182px
 }
 
 .hidden-radio:checked+.button-secondary {
-  transition: background 0.2s ease;
-  background: var(--button-secondary-pressed, #594E3E);
-  height: 40px;
-}
-
-.product-description .button-primary {
-  width: 100%;
-}
-
-#also-buy {
-  display: flex;
-  flex-direction: column;
-  padding: 0.75rem;
-  gap: 1rem;
+  transition: background .2s;
+  background: var(--button-secondary-pressed, #594e3e);
+  height: 40px
 }
 
 .carousel {
@@ -709,24 +649,22 @@ footer {
   flex-direction: row;
   width: 363px;
   align-items: flex-start;
-  gap: 0.5rem;
-  overflow: scroll;
+  gap: .5rem;
+  overflow: scroll
 }
-
-/*Reviews Henrietta*/
 
 .Review-div {
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  gap: 16px;
+  gap: 16px
 }
 
 #title-left {
   display: flex;
   align-items: center;
-  align-self: stretch;
+  align-self: stretch
 }
 
 .Review {
@@ -734,24 +672,18 @@ footer {
   width: 363px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  gap: 8px
 }
 
 .review-header {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 16px
 }
 
 .rating {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4px;
-}
-
-
-.rating img {
-  width: 20px;
-  height: 20px;
+  gap: 4px
 }
