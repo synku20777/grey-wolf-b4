@@ -383,7 +383,7 @@ nav.navbar {
 footer {
   display: flex;
   width: 100%;
-  padding: 1rem;
+  padding: 0.75rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
@@ -580,7 +580,7 @@ footer {
   filter: invert(1);
 }
 
-.carousel {
+.carousel-preview {
   display: flex;
   align-items: flex-start;
   gap: 8px;
@@ -645,6 +645,19 @@ footer {
 
 .product-description .button-primary {
   width: 100%;
+}
+
+#also-buy {
+  padding: 0.75rem;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  width: 363px;
+  align-items: flex-start;
+  gap: 0.5rem;
+  overflow: scroll;
 }
 
 /*Reviews Henrietta*/
