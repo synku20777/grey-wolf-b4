@@ -145,13 +145,14 @@ nav.navbar {
 
 .nav .nav-list {
   margin: 0%;
-  padding: 1rem;
+  padding: 1rem 1rem 10rem 1rem;
   display: flex;
-  width: 22.875rem;
+  width: 70%;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
   position: absolute;
+  justify-content: flex-end;
   z-index: 1;
   top: 0;
   right: -100%;
