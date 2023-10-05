@@ -644,6 +644,38 @@ footer {
   height: 40px
 }
 
+.dropdown {
+  width: 363px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropbtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  flex-direction: column;
+  transition: max-height 666ms ease-out;
+}
+
+.dropdown-content p {
+  display: block;
+  word-wrap: wrap;
+  width: 100%;
+}
+
+.hidden-checkbox:checked~.dropdown-content {
+  max-height: 500px;
+  /* Adjust this value according to your content's height */
+  display: flex;
+  /* Optional, depending on your layout requirements */
+}
+
 .carousel {
   display: flex;
   flex-direction: row;
