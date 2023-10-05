@@ -650,7 +650,7 @@ footer {
   width: 363px;
   align-items: flex-start;
   gap: .5rem;
-  overflow: scroll
+  overflow-x: scroll;
 }
 
 .Review-div {
